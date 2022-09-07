@@ -26,23 +26,25 @@ const getData=()=>{
   }
   return (
     <>
-    
+    <div className='container-fluid mt-5 col-10'>
     <div className='container '>
-      <h1 className='text-center display-1 text-white'>JOKES😂</h1>
+      
+      <h1 className='text-center display-3 text-white'>JOKES😂</h1>
     </div>
   {
   <>
-      <div  className=' card mb-3 mt-5 mx-auto shadow w-50 '>
-            <h3 className='card-header mt-2 text-dark text-center'>{categories}</h3>
+      <div  className=' card mb-3 mt-5 mx-auto shadow col-lg-6 col-sm-12 col-md-10 '>
+            <h3 className='card-header mt-2 text-warning text-center'>{categories}</h3>
             <div className='card-body'>
-                <p className='card-text fs-4 text-center text-danger'>{jokes}</p>
+                <p className='card-text fs-4 text-center text-light'>{jokes}</p>
             </div>
       </div>
     <div className='text-center' >
-        <button onClick={(getData)} className='btn btn-danger   btn-lg'>Next</button>
+        <button onClick={(getData)} className='btn btn-warning   btn-lg'>Next</button>
     </div>
   </>
   }
+  </div>
   </>
   )
 }
